@@ -1,0 +1,42 @@
+{
+  "content_type": "JSON",
+  "customEvents": [
+    {
+      "message": "plugin_pluginmanager_install_plugin",
+      "name": "plugin_pluginmanager_install_plugin"
+    },
+    {
+      "message": "plugin_pluginmanager_uninstall_plugin",
+      "name": "plugin_pluginmanager_uninstall_plugin"
+    },
+    {
+      "message": "plugin_pluginmanager_enable_plugin",
+      "name": "plugin_pluginmanager_enable_plugin"
+    },
+    {
+      "message": "plugin_pluginmanager_disabled_plugin",
+      "name": "plugin_pluginmanager_disabled_plugin"
+    }
+  ],
+  "data": "{\n  \"deviceIdentifier\":\"@deviceIdentifier\",\n  \"topic\":\"@topic\",\n  \"message\":\"@message\",\n  \"extra\":\"@extra\",\n  \"print_name\":\"@job.file.name\",\n  \"estimated_print_time\":\"@job.estimatedPrintTime\",\n  \"job\": \"@job\",\n  \"meta\": \"@meta\",\n  \"state\": \"@state\",\n  \"progress\": \"@progress\",\n  \"currentTime\": \"@currentTime\",\n  \"percentCompleteMilestone\": \"@percentCompleteMilestone\"\n}",
+  "eventErrorMessage": "Error ",
+  "eventPrintDoneMessage": "Print Finished",
+  "eventPrintFailedMessage": "Print Failed",
+  "eventPrintPausedMessage": "Print Paused",
+  "eventPrintProgressMessage": "Print finished on @percentCompleteMilestone %",
+  "eventPrintStartedMessage": "Print Started",
+  "eventUserActionNeededMessage": "User action needd",
+  "event_cooldown": 0,
+  "event_print_progress_interval": "1",
+  "headers": "{\n  \"Content-Type\": \"application/json\",\n  \"Authorization\": \"Bearer @token\"\n}",
+  "http_method": "POST",
+  "oauth": true,
+  "oauth_content_type": "JSON",
+  "oauth_data": "{\n  \"login\":\"ed1dsadas\",\n  \"password\":\"123123\"\n}",
+  "oauth_headers": "{\n  \"Content-Type\": \"application/json\"\n}",
+  "oauth_http_method": "POST",
+  "oauth_url": "http://192.168.1.101:8080/api/auth/login",
+  "verify_ssl": false,
+  "_name": "Plugin Events",
+  "_description": "Plugin Install / Uninstall / Enable / Disable"
+}
